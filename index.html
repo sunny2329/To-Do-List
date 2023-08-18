@@ -9,10 +9,16 @@
 </head>
 
 <body class="bg-pink-800">
-    <div class="container w-[100%] min-h-[100vh] p-[10px] flex justify-center items-center">
-        <div class="todo-app bg-white w-[50%] h-[10rem] flex justify-between p-10 items-center rounded-2xl">
-            <h2 class="font-bold md:text-2xl lg:text-6xl">To-Do List</h2>
-            <img src="List-icon-by-ahlangraphic-2.jpg" class="md:w-[10rem] md:h-[7rem] w-[9rem] h-[7rem] lg:w-[13rem] lg:h-[10rem]" alt="">
+    <div class="container w-[100%] min-h-[100vh] p-[10px] flex justify-center items-center flex-wrap">
+        <div class="todo-app w-[50%] h-[18rem] flex justify-center p-10 items-center rounded-2xl bg-white flex-col">
+
+            <div class="flex items-center justify-center">
+                <h2 class="font-bold md:text-2xl lg:text-6xl">To-Do List</h2>
+                <img src="List-icon-by-ahlangraphic-2.jpg" class="md:w-[10rem] md:h-[7rem] w-[9rem] h-[7rem] lg:w-[13rem] lg:h-[10rem]" alt="">
+            </div>
+          
+
+            <input type="text" placeholder="Add A Task" class="rounded-2xl p-5 border-blue-500 border-2 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-500 focus:scale-125 transition-all ease-in-out duration-1000">
         </div>
     </div>
 </body>

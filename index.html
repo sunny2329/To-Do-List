@@ -10,25 +10,49 @@
 
 <body class="bg-pink-800">
     <div class="container w-[100%] min-h-[100vh] p-[10px] flex justify-center items-center flex-wrap">
-        <div class="todo-app w-[50%] h-[22rem] flex justify-between p-10 items-center rounded-2xl bg-white flex-col">
+        <div class="todo-app min-w-[50%] min-h-[22rem] flex justify-between p-10 items-center rounded-2xl bg-white flex-col break-words">
 
             <div class="flex items-center justify-center">
                 <h2 class="font-bold md:text-2xl lg:text-6xl">To-Do List</h2>
                 <img src="List-icon-by-ahlangraphic-2.jpg" class="md:w-[10rem] md:h-[7rem] w-[9rem] h-[7rem] lg:w-[13rem] lg:h-[10rem]" alt="">
             </div>
           
-            <div class="flex  justify-start items-center">
-                <input type="text" placeholder="Write A Task" class="rounded-2xl p-5 border-blue-500 border-2 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-500 lg:focus:scale-125 transition-all ease-in-out duration-1000 mb-5 basis-full">
+            <div class="flex  justify-start items-center row">
 
-                <button class="border-blue-500 border-2 lg:rounded-[40px] rounded-md p-2 mt-4 lg:bg-lime-600 lg:text-white lg:w-[6rem]  lg:hover:bg-cyan-700 lg:hover:border-green-300 h-[4rem] mb-8 ">
+                <input type="text" placeholder="Write A Task" id="input-box" class="rounded-2xl p-5 border-blue-500 border-2 focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-500 lg:focus:scale-125 transition-all ease-in-out duration-1000 mb-5 basis-full">
+
+                <button class="border-blue-500 border-2 lg:rounded-[40px] rounded-md p-2 mt-4 lg:bg-lime-600 lg:text-white lg:w-[6rem]  lg:hover:bg-cyan-700 lg:hover:border-green-300 h-[4rem] mb-8 z-20 " onclick="addtask()">
                     Add
                 </button>
+
+                
+
             </div>
+
+
+            <ul id="list">
+                <!-- <li class="lis relative check">
+                    <div class="divs divscheck">
+
+                    </div>
+                
+                    Task 1 
+                </li>
+                <li class="lis relative">
+                    <div class="divs">
+
+                    </div>
+                    Task 2</li>
+                <li class="lis relative">
+                    <div class="divs"></div>
+                    Task 3</li> -->
+            </ul>
        
 
           
         </div>
     </div>
+    <script src="js.js"></script>
 </body>
 
 </html>

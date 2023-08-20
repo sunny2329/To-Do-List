@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.lis{
+    @apply font-bold text-xl p-7 cursor-pointer 
+}
+
+
+.divs{
+    @apply bg-transparent w-5 h-5 inline-block absolute top-[38%] right-[100%] rounded-full border-solid border-black border-2
+}
+
+
+.check{
+    @apply line-through 
+}
+
+
+.divscheck{
+    @apply bg-pink-600
+}
+
+.cross{
+    @apply absolute left-[100%] right-0 top-7 scale-125 text-red-600 hover:text-red-700
+}
